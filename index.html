@@ -3,105 +3,50 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>suemonblue · 50 Red Flag Rehberi</title>
-<meta name="description" content="Bunları yapıyorsa doğru kişi değil: 50 red flag. Ücretsiz rehber, direkt mailine geliyor.">
+<title>suemonblue</title>
+<meta name="description" content="suemonblue">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Fraunces:opsz,wght@9..144,400..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,300..900;1,6..12,300..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Nunito+Sans:opsz,wght@6..12,300..900&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --pink:#FFF1F6;
-    --red:#C40024;
-    --blue:#4D5DFB;
-    --text:#5a2230;
-    --muted:#8a4a58;
-  }
+  :root { --pink:#FFF1F6; --red:#C40024; --blue:#4D5DFB; --muted:#8a4a58; }
   * { margin:0; padding:0; box-sizing:border-box; }
   html, body { height:100%; }
   body {
-    font-family:"Nunito Sans","Avenir Next",Avenir,"Helvetica Neue",sans-serif;
-    background:var(--pink); color:var(--text);
+    font-family:"Nunito Sans","Avenir Next",sans-serif;
+    background:var(--pink);
     display:flex; flex-direction:column; min-height:100dvh;
   }
+
+  nav {
+    padding:26px 24px;
+    display:flex; justify-content:center; gap:28px;
+  }
+  nav a {
+    font-size:13px; font-weight:800; letter-spacing:1.6px; text-transform:uppercase;
+    color:var(--red); text-decoration:none;
+    padding-bottom:3px; border-bottom:2px solid transparent;
+    transition:border-color .15s;
+  }
+  nav a:hover { border-bottom-color:var(--red); }
+
   main {
-    flex:1; width:100%; max-width:520px; margin:0 auto;
-    padding:36px 24px 48px; display:flex; flex-direction:column;
+    flex:1; display:flex; align-items:center; justify-content:center;
+    padding:24px 24px 80px;
   }
-  .brand {
+  .logo {
     font-family:"Bodoni Moda",Georgia,serif; font-style:italic;
-    color:var(--blue); font-size:30px; margin-bottom:30px; line-height:1;
+    color:var(--blue); line-height:1;
+    font-size:clamp(44px, 13vw, 92px);
+    display:flex; align-items:baseline; justify-content:center;
   }
-  .brand .b1 { font-weight:400; }
-  .brand .b2 { font-weight:900; letter-spacing:-0.5px; }
-  h1 {
-    font-family:"Fraunces","Bodoni Moda",Georgia,serif; font-weight:800;
-    font-size:clamp(32px, 9vw, 42px); line-height:1.1; font-weight:700;
-    letter-spacing:-0.3px; color:var(--red); margin-bottom:14px;
-  }
-  .sub { font-size:16px; line-height:1.55; margin-bottom:20px; }
-  ul.benefits { list-style:none; margin-bottom:26px; display:flex; flex-direction:column; gap:10px; }
-  ul.benefits li { font-size:14.5px; line-height:1.45; padding-left:26px; position:relative; }
-  ul.benefits li::before { content:"🚩"; position:absolute; left:0; top:1px; font-size:14px; }
-  form { display:flex; flex-direction:column; gap:11px; }
-  input {
-    padding:15px 17px; border-radius:13px; border:2px solid var(--red);
-    font-size:16px; font-family:inherit; background:#fff; color:#3a1620; outline:none;
-    transition:box-shadow .15s;
-  }
-  input::placeholder { color:#c98a99; }
-  input:focus { box-shadow:0 0 0 3px rgba(196,0,36,.15); }
-  button {
-    padding:17px; border-radius:13px; border:none; font-size:16px; font-weight:800;
-    letter-spacing:.3px; cursor:pointer; font-family:inherit;
-    background:var(--red); color:#fff; box-shadow:0 6px 18px rgba(196,0,36,.35);
-    transition:transform .12s, box-shadow .12s;
-  }
-  button:active { transform:scale(.985); }
-  .micro { font-size:11.5px; line-height:1.5; color:var(--muted); margin-top:4px; }
-  .micro a { color:var(--muted); }
-  .success {
-    display:none; background:#fff; border:2px solid var(--red); border-radius:13px;
-    padding:18px; font-size:15px; line-height:1.5; text-align:center;
-  }
-  .success b { color:var(--red); }
-  article {
-    margin-top:56px; padding-top:40px;
-    border-top:2px solid rgba(196,0,36,.18);
-  }
-  .kicker {
-    font-size:12px; font-weight:800; letter-spacing:2px; text-transform:uppercase;
-    color:var(--blue); margin-bottom:12px;
-  }
-  article h2 {
-    font-family:"Fraunces","Bodoni Moda",Georgia,serif; font-weight:800;
-    font-size:clamp(28px, 7.5vw, 34px); line-height:1.12; color:var(--red);
-    margin-bottom:10px; letter-spacing:-0.3px;
-  }
-  .standfirst {
-    font-family:"Bodoni Moda",Georgia,serif; font-style:italic;
-    font-size:16.5px; line-height:1.5; color:var(--muted); margin-bottom:26px;
-  }
-  article p.body { font-size:15.5px; line-height:1.75; margin-bottom:20px; }
-  .standfirst + p.body::first-letter {
-    font-family:"Bodoni Moda",Georgia,serif; font-weight:900;
-    font-size:54px; line-height:.85; color:var(--blue);
-    float:left; padding-right:9px; padding-top:5px;
-  }
-  article p.body b { color:var(--red); }
-  article a { color:var(--red); text-decoration:underline; text-underline-offset:2px; }
-  .pull {
-    font-family:"Bodoni Moda",Georgia,serif; font-style:italic; font-weight:600;
-    font-size:21px; line-height:1.35; color:var(--red);
-    border-left:3px solid var(--blue); padding-left:18px; margin:28px 0;
-  }
-  .byline {
-    font-family:"Bodoni Moda",Georgia,serif; font-style:italic;
-    color:var(--blue); font-size:20px; margin-top:6px;
-  }
-  footer { margin-top:auto; }
+  .logo .b1 { font-weight:400; }
+  .logo .b2 { font-weight:900; letter-spacing:-1px; }
+
+  footer { padding:0 0 0; }
   .foot-links {
-    max-width:520px; margin:0 auto; padding:0 24px 18px;
-    display:flex; gap:16px; font-size:11.5px; color:var(--muted);
+    display:flex; justify-content:center; gap:18px;
+    font-size:11.5px; color:var(--muted); padding:0 24px 18px;
   }
   .foot-links a { color:var(--muted); }
   .deco {
@@ -113,102 +58,21 @@
 </head>
 <body>
 
+<nav>
+  <a href="/50">50 red flags</a>
+</nav>
+
 <main>
-  <div class="brand"><span class="b1">sue</span><span class="b2">monblue</span></div>
-
-  <h1>Bunları yapıyorsa doğru kişi değil: 50 red flag</h1>
-
-  <p class="sub">İlişkinin en başında gözden kaçan tehlike işaretleri. Ücretsiz rehber, direkt mailine geliyor.</p>
-
-  <ul class="benefits">
-    <li>Somut örnekler: duvara yumruk atmak, tartışırken hızlı araba kullanmak, üstüne yürümek</li>
-    <li>Hangisi "dikkat et", hangisi "hemen uzaklaş" seviyesinde</li>
-    <li>Türkiye'deki destek hatları ve güvenli çıkış planı</li>
-  </ul>
-
-  <!-- KIT_FORM_ID aşağıdaki script'te dolunca form gerçek listeye kaydeder -->
-  <form id="optin" autocomplete="on" method="post">
-    <input type="text" name="fields[first_name]" placeholder="Adın" autocomplete="given-name" required>
-    <input type="email" name="email_address" placeholder="E-posta adresin" autocomplete="email" required>
-    <button type="submit">Rehberi Mailime Gönder ♥</button>
-    <p class="micro">Kaydolunca suemonblue mail ailesine katılırsın. Sadece işine yarayacak mailler, istediğin an tek tıkla çıkarsın. <a href="gizlilik.html">Gizlilik politikası</a></p>
-  </form>
-
-  <div class="success" id="success">
-    <b>Süper! 💌</b><br>
-    Mailine bir onay linki gönderdik. Ona tıkladığın an rehber sende.
-    Gelmezse spam kutusuna bir bak.
-  </div>
-
-  <article>
-    <div class="kicker">suemonblue yazıları</div>
-    <h2>İlk Seferinde İnan</h2>
-    <p class="standfirst">Duvara atılan yumruklar, çok güzel özürler ve bir aşk hikayesinin bitmesi gereken o an üzerine.</p>
-
-    <p class="body">Hep güzel başlıyor. Kimsenin bizi uyarmadığı kısım da bu zaten. Komik, ilgili, mesajlara hızlı dönüyor, üç konuşma önce söylediğin şeyi hatırlıyor. İlk haftalar, sanki sinir sistemini o tamir etmiş gibi hissettiriyor. Sonra bir gece bir tartışma çıkıyor, nasıl başladığını sonradan hatırlamayacağın kadar küçük bir şey, ve yumruğu kapının yanındaki duvara giriyor.</p>
-
-    <p class="body">Sonrası artık ders kitabı gibi. İçten bir özür diliyor, sözler veriyor. Bir daha asla yapmayacakmış. Hatta bunu daha önce kimseye yapmamış, hiç. Ona ne olduğunu kendisi de bilmiyormuş! Amcası iki ay önce öldüğünden beri kendinde değilmiş, ya da iş çok yoğunmuş, elinde olmayan şeyler yüzünden bunalmış ve senden çıkarmış. Bir daha olmayacağına söz veriyor. Sen de inanıyorsun. Ama yine oluyor. Hep oluyor. Ve sen yine inanıyorsun, "bir daha asla" dediği her seferinde.</p>
-
-    <p class="body">Bir de diğer tür var, daha tehlikeli olan: özrü tamamen atlayıp suçu sana uzatan erkekler. Senin hatandı. Onun tepkisine senin davranışın sebep oldu. "Sen bunu yapmasaydın ben de sana bunu yapmazdım." "Nasıl davranacağını bilseydin sana bağırmazdım." Az önce ne olduğuna dikkat et: soruşturma yeniden açıldı ve şüpheli artık sensin. Ona inanma. Sen iyi bir kadınsın ve kendi gerçeğini biliyorsun. Güvensiz bir erkek, kendi güven sorunlarını manipülasyonla ve seni cezalandırarak sana yansıtır. Ve seni cezalandıran bir adam seni sevmiyordur. Muhtemelen senden hoşlanmıyordur bile.</p>
-
-    <p class="body">Bazı kadınlar daha ilk saniyede bunun kabul edilemez olduğunu biliyor. Çoğumuz da bir yerlerde biliyoruz aslında. Ama bilmenin rakipleri var. Yatırılmış zaman var bir kere, aylar var, ve içimizdeki muhasebeci baştan başlamanın kalmaktan pahalı olduğunu fısıldıyor. Nadir bulunmuş gibi hissettiren o bağ var, güzel bir şeye dönüşebilecekken bizim yakıp yıktığımız şey olma korkusu var. Bir de eğitim var. Türk dizileriyle büyüdüysen, kameranın ağır çekimde kadının bileğini kavrayan adama odaklandığı, arkada kemanların yükseldiği sahnelerle büyüdün. Kıskançlık bağlılıktı. Öfke derinlikti. Fırtına, sevdiğinin kanıtıydı. Aşkın bu okumasını biz uydurmadık; bizim için üretildi, HD kalitesinde, prime time'da, yıllarca.</p>
-
-    <p class="body">Bir de en iyilerimizi yakalayan tuzak var: empati. Biz kadınlar anlayışlı olmak üzere yetiştirildik, tıpkı kibar olmak üzere yetiştirildiğimiz gibi. O yüzden onu bir vaka dosyası gibi incelemeye başlıyoruz. Çocukluğunda bir yerde mutlaka bir sebep vardır. Bağırışların arkasında mutlaka bir yara vardır. Genelde de vardır, çünkü herkesin vardır, ve empatiyi bu kadar tehlikeli yapan tam olarak bu. Anlamak tam zamanlı bir işe dönüşüyor ve bu iş maaşını muafiyet olarak ödüyor. Bir kadının iç sesindeki en tehlikeli cümle "onu seviyorum" değil. <b>"Ama neden yaptığını anlıyorum."</b> Empatin bir hediye. Yanlış ellerde, onun mazereti oluyor.</p>
-
-    <p class="body">Ama tartışılmaz gerçek şu: bazı davranışlar yoruma açık değildir. Duvara atılan yumruğu romantik yapan bir geçmiş hikayesi, sana bağırmayı makul yapan bir stres seviyesi, seni giden bir arabanın içinde korkutmaya hak kazandıran bir çocukluk yoktur. Bir insan üçüncü buluşmadaki hali değildir. Bir insan çatışmadaki, stres altındaki, en kötü anındaki halidir, ve o hali kuralın istisnası değildir. Kuralın kendisidir.</p>
-
-    <div class="pull">Maya Angelou bunu en yalın haliyle söylemiş: "Biri sana kim olduğunu gösterdiğinde, ona ilk seferinde inan."</div>
-
-    <p class="body">Türkiye'de bu soyut bir tartışma değil. Her yıl yüzlerce kadın, tanıdığı ve çoğu zaman sevdiği erkekler tarafından öldürülüyor; <a href="https://kadincinayetlerinidurduracagiz.net" target="_blank" rel="noopener">Kadın Cinayetlerini Durduracağız Platformu</a> bunları ay ay sayıyor. Ve o hikayelerin neredeyse hepsi çekicilikle başladı. Tehlikeli hiç kimse kendini tehlikeli diye tanıtmaz. Erken işaretler oyunun tamamıdır, ve onları okumak karamsarlık değildir. Yüzme bilmek gibi bir hayatta kalma becerisidir.</p>
-
-    <p class="body">Yukarıdaki rehber bunun için var. Elli davranış ki hiçbiri tatlı bir huy değil, tutku değil, kültür değil, ve senin suçun hiç değil. Hayır, aşırı hassas değilsin. Olayı büyütmüyorsun. Sen bütün, yetenekli, değerli bir kadınsın ve değerli yıllarını, ses yüksekliğini duygu sanan bir adamın ücretsiz rehabilitasyon merkezi olarak geçirmekten daha iyisini hak ediyorsun. Bazı erkekler gerçek yüzünü uzun süre saklar. Ama gösterdiği gün, ona inan.</p>
-
-    <p class="body">Ve sonra git.</p>
-
-    <div class="byline">sue</div>
-  </article>
+  <div class="logo"><span class="b1">sue</span><span class="b2">monblue</span></div>
 </main>
 
 <footer>
   <div class="foot-links">
     <a href="https://instagram.com/suemonblue" target="_blank" rel="noopener">@suemonblue</a>
-    <a href="gizlilik.html">Gizlilik</a>
+    <a href="/gizlilik.html">Gizlilik</a>
   </div>
   <div class="deco"></div>
 </footer>
-
-<script>
-  // Kit form ID buraya (Kit'te form oluşturunca embed kodundaki sayı, örn "7654321").
-  // Boşken form test modunda çalışır: kayıt gitmez, sadece başarı mesajı görünür.
-  const KIT_FORM_ID = "9818110";
-
-  const form = document.getElementById('optin');
-  form.addEventListener('submit', async function (e) {
-    e.preventDefault();
-    const showSuccess = () => {
-      form.style.display = 'none';
-      document.getElementById('success').style.display = 'block';
-    };
-    if (!KIT_FORM_ID) { showSuccess(); return; } // test modu
-
-    const btn = form.querySelector('button');
-    btn.disabled = true; btn.textContent = 'Gönderiliyor...';
-    try {
-      const res = await fetch(`https://app.kit.com/forms/${KIT_FORM_ID}/subscriptions`, {
-        method: 'POST',
-        headers: { 'Accept': 'application/json' },
-        body: new FormData(form)
-      });
-      if (!res.ok) throw new Error('kit ' + res.status);
-      showSuccess();
-    } catch (err) {
-      // fetch engellenirse klasik form gönderimine düş (Kit'in kendi teşekkür sayfasına gider)
-      form.action = `https://app.kit.com/forms/${KIT_FORM_ID}/subscriptions`;
-      form.removeEventListener('submit', arguments.callee);
-      form.submit();
-    }
-  });
-</script>
 
 </body>
 </html>
